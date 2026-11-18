@@ -8,6 +8,9 @@ if __name__ == "__main__":
 
     initialAmt = int(input("Enter amount as initial balance: "))
     deposit = int(input("Enter amount to deposit: "))
-    print("Total Balance: ", bankOp(initialAmt, deposit, 0))
     withdraw = int(input("Enter amount to withdraw"))
-    print("Updated Balance: ", bankOp(initialAmt, deposit, withdraw))
+
+    totalBal, updatedBal = bankOp(initialAmt, deposit, withdraw)
+
+    print("Total Bal: ", totalBal)
+    print("Updated Bal: ", updatedBal)
