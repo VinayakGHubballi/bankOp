@@ -1,3 +1,5 @@
+import sys
+
 def bankOp(initialAmt, deposit, withdraw):
     totalBal = initialAmt+deposit
     updatedBal = totalBal-withdraw
@@ -6,9 +8,9 @@ def bankOp(initialAmt, deposit, withdraw):
 
 if __name__ == "__main__":
 
-    initialAmt = int(input("Enter amount as initial balance: "))
-    deposit = int(input("Enter amount to deposit: "))
-    withdraw = int(input("Enter amount to withdraw"))
+    initialAmt = int(sys.argv[1])
+    deposit = int(sys.argv[2])
+    withdraw = int(sys.argv[3])
 
     totalBal, updatedBal = bankOp(initialAmt, deposit, withdraw)
 

@@ -1,4 +1,4 @@
-FROM bank import bankOp
+from bank import bankOp
 
 def test_amount():
     Balance, updatedBal = bankOp(100000, 40000, 0)
